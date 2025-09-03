@@ -22,9 +22,12 @@ const GridCard = ({ children }: { children: React.ReactNode }) => (
 // Define the shape of your data for CarouselCard
 type CarouselCardData = {
   id: string;
-  title: string;
-  imageUrl: string;
-  // Add other fields used inside CarouselCard
+  fields: {
+    title: string;
+    imageUrl: string;
+    "Flow Name": string;
+    // Add other fields used inside CarouselCard
+  };
 };
 
 // Renders appropriate component based on feature
